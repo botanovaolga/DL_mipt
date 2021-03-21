@@ -7,8 +7,8 @@ from sklearn.datasets import make_moons
 from sklearn.neighbors import KNeighborsClassifier
 
 def make_data():
-    X, y = make_moons(n_samples=1000, noise=0.3, random_state=0)
-    X = StandardScaler.fit_transform(X=X)
+    X, y = make_moons(n_samples=1000, noise=0.5, random_state=100)
+    X = StandardScaler().fit_transform(X=X)
     X_train, X_test, y_train, y_test = \
         train_test_split(X, y, test_size=0.4, random_state=42)
     return X_train, X_test, y_train, y_test
@@ -27,7 +27,7 @@ def predict_proba_on_mesh(clf, xx, yy):
     Z = Z.reshape(xx.shape)
     return Z
 
-def plot_predictions(xx, yy, Z, X_train = None, X_test = None, y_train = None, y_test = None,
+def plot_predictions(xx, yy, Z, plot_name = "1.png", X_train = None, X_test = None, y_train = None, y_test = None,
                     figsize = (10, 10),
                     title = "predictions",
                     cm = plt.cm.RdBu,
@@ -56,5 +56,4 @@ if __name__ == "__main__":
     clf.fit(X_train, y_train)
     Z = predict_proba_on_mesh(clf, xx, yy)
 
-    plot_prediction(xx, yy, Z, X_train = X_train, X_test = X_test)
-
+    plot_predictions(xx, yy, Z, X_train = X_train, X_test = X_test)
