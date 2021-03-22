@@ -44,8 +44,8 @@ def plot_predictions(xx, yy, Z, plot_name = "1.png", X_train = None, X_test = No
     plt.ylim(yy.min(), yy.max())
     plt.title(title)
     plt.tight_layout()
+    plt.savefig(plot_name)
     plt.show()
-    plt.savefig("1_pic.png")
 
 if __name__ == "__main__":
     X_train, X_test, y_train, y_test = make_data()
