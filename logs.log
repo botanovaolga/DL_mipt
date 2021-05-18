@@ -1,6 +1,0 @@
-2021-03-20 16:03:58,442 MainProcess dataset - INFO: element 0 (tensor([0.9267, 1.7563]), tensor(0))
-2021-03-20 16:03:58,443 MainProcess dataset - DEBUG: element 10 (tensor([-0.3516, -0.4385]), tensor(1))
-2021-03-20 16:03:58,443 MainProcess dataset - INFO: len(circles): 5000
-2021-03-20 16:09:28,869 MainProcess dataset - INFO: element 0 (tensor([0.9267, 1.7563]), tensor(0))
-2021-03-20 16:09:28,870 MainProcess dataset - DEBUG: element 10 (tensor([-0.3516, -0.4385]), tensor(1))
-2021-03-20 16:09:28,870 MainProcess dataset - INFO: len(circles): 5000
