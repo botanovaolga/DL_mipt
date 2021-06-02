@@ -2,3 +2,4 @@ torch
 numpy
 cv2
 albumentations
+streamlit
